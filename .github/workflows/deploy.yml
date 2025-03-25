@@ -5,6 +5,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18" # 选择合适的 Node.js 版本
+      - name: Install PNPM
+        run: npm install -g pnpm # 安装 PNPM
+      - name: Install Dependencies
+        run: pnpm install # 使用 PNPM 安装依赖
+      - name: Build Taro H5
+        run: pnpm build:h5 # 构建 H5 产物
+
       - name: Install Vercel CLI
         run: npm install --global vercel@latest
       - name: Deploy to Vercel
