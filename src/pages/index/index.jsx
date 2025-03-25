@@ -14,7 +14,7 @@ export default function Index() {
 
       <View className="flex flex-col items-center justify-center flex-1 w-full ">
         <View className="text-3xl font-bold mb-4 font-heading">已打卡天数</View>
-        <View className="text-6xl font-extrabold font-heading">3</View>
+        <View className="text-6xl font-extrabold font-heading">2</View>
         <View className="bg-white shadow-md rounded-lg  mt-4 w-[90%] border border-black">
           <View className="flex items-center pl-4">
             <View className="w-20 h-20 mr-4 border border-black rounded-sm flex items-center justify-center">
